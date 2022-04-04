@@ -1,15 +1,15 @@
 object Reduce:
   def main(args: Array[String]): Unit = 
-    println("Hello world!")
-    println(msg)
-
-    val a = new ReUpdateLive(3)
-    println(a.ncode)
-    a.live(0) = 99
-    println(a.live(0))
-    a.n_live = 1111
-    println(a.n_live)
-  def msg = "I was compiled by Scala 3. :)"
+    println("Reduce.")
+    // UpdateLive (check D reducible)
+    val rn    = new TpRingNchar  (8, 0) // nchar = Const::SIMATCHNUMBER[ring] / 8 + 1
+    val lTwin = new TpLiveTwin   (0, Array(1, 2, 3))
+    val uLive = new ReUpdateLive (rn, 3, lTwin)
+    println(uLive.ncode)
+    uLive.lTwin.live(0) = 99
+    println(uLive.lTwin.live(0))
+    uLive.lTwin.nLive = 1111
+    println(uLive.lTwin.nLive)
 
 
 
