@@ -1,4 +1,5 @@
 final val MAXRING       = 14
+final val POWER         = Array(0, 1, 3, 9, 27, 81, 243, 729, 2187, 6561, 19683, 59049, 177147, 531441, 1594323, 4782969, 14348907)
 final val SIMATCHNUMBER = Array(0, 0, 1, 3, 10, 30, 95, 301, 980, 3228, 10797, 36487, 124542, 428506, 1485003)
 
 class TpLiveTwin    (var nLive: Int, val live: Array[Int])
